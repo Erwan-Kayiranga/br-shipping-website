@@ -3,7 +3,8 @@
 
 import { useEffect, useState } from "react";
 
-const WHATSAPP_NUMBER = "250780000000";
+const WHATSAPP_NUMBER = "32467631100";
+const CONTACT_EMAIL = "brshipping250@gmail.com";
 
 const WHATSAPP_MESSAGE = encodeURIComponent(
   "Hello BR Shipping! I would like to ask about your shipping services from Belgium to Rwanda."
@@ -86,14 +87,24 @@ export default function Home() {
     <span className="logo-sub">SHIPPING</span>
   </a>
 
+  <div className="nav-actions">
   <a
     href={`https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`}
     className="nav-contact"
     target="_blank"
     rel="noopener noreferrer"
   >
-    CONTACT US <span>↗</span>
+    WHATSAPP ↗
   </a>
+<a
+  href={`https://mail.google.com/mail/?view=cm&fs=1&to=${CONTACT_EMAIL}&su=${encodeURIComponent("Shipping enquiry - BR Shipping")}`}
+  className="hero-button email-button"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  SEND AN EMAIL →
+</a>
+</div>
 </header>
 
 
@@ -131,14 +142,26 @@ export default function Home() {
 </div>
 
 
-          <a
-  href={`https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`}
-  className="hero-button"
+ <div className="hero-actions">
+  <a
+    href={`https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`}
+    className="hero-button"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    WHATSAPP US →
+  </a>
+
+ <a
+  href={`https://mail.google.com/mail/?view=cm&fs=1&to=${CONTACT_EMAIL}&su=${encodeURIComponent("Shipping enquiry - BR Shipping")}`}
+  className="hero-button email-button"
   target="_blank"
   rel="noopener noreferrer"
 >
-  GET IN TOUCH <span>→</span>
+  SEND AN EMAIL →
 </a>
+</div>
+
         </div>
 
         <div className="carousel-controls">
@@ -186,33 +209,13 @@ export default function Home() {
           Get in touch with BR Shipping and let's discuss how we can
           help with your shipment.
         </p>
-       <a
-  href={`https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`}
-  className="contact-button"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  CONTACT BR SHIPPING →
-</a>
+  
       </section>
 
       <footer className="footer">
         <div>
 
-                 <a
-        href={`https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`}
-        className="whatsapp-button"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Contact BR Shipping on WhatsApp"
-      >
-        <svg viewBox="0 0 32 32" aria-hidden="true">
-          <path
-            fill="currentColor"
-            d="M16.01 3C8.84 3 3 8.82 3 15.98c0 2.29.6 4.53 1.74 6.5L3 29l6.7-1.7a13 13 0 0 0 6.3 1.61h.01C23.17 28.91 29 23.1 29 15.94A12.9 12.9 0 0 0 16.01 3Zm0 23.7c-1.97 0-3.9-.53-5.58-1.53l-.4-.24-3.97 1.01 1.06-3.87-.26-.42a10.7 10.7 0 0 1-1.65-5.67c0-5.95 4.85-10.79 10.81-10.79 2.88 0 5.59 1.12 7.63 3.16a10.72 10.72 0 0 1 3.16 7.63c0 5.96-4.85 10.81-10.8 10.81Zm5.93-8.09c-.32-.16-1.88-.93-2.17-1.03-.29-.11-.5-.16-.71.16-.21.32-.82 1.03-1 1.24-.18.21-.37.24-.69.08-.32-.16-1.35-.5-2.57-1.6-.95-.85-1.6-1.9-1.79-2.22-.18-.32-.02-.49.14-.65.14-.14.32-.37.48-.55.16-.19.21-.32.32-.53.1-.21.05-.4-.03-.56-.08-.16-.71-1.72-.98-2.36-.26-.62-.52-.54-.71-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.11 1.08-1.11 2.64s1.14 3.06 1.3 3.27c.16.21 2.24 3.42 5.42 4.8.76.33 1.35.53 1.81.68.76.24 1.45.21 2 .13.61-.09 1.88-.77 2.15-1.51.26-.74.26-1.37.18-1.5-.08-.13-.29-.21-.61-.37Z"
-          />
-        </svg>
-      </a>
+     
 
           <span className="footer-logo">BR. SHIPPING</span>
           <p>Connecting Belgium and Rwanda.</p>

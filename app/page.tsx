@@ -50,9 +50,21 @@ const slides = [
     priceNote: "Illustrative price per kilogram",
     image:
       "https://images.unsplash.com/photo-1607082349566-187342175e2f?auto=format&fit=crop&w=2000&q=85",
+    },
+  {
+    number: "04",
+    eyebrow: "BELGIUM TO RWANDA · BEAUTY & PERSONAL CARE",
+    title: "Beauty &",
+    highlight: "Skincare.",
+    description:
+      "Sending lotions, body creams and skincare products to Rwanda? Contact us to check availability and shipping requirements.",
+    price: "Ask",
+    unit: "for a quote",
+    priceNote: "Prices depend on the product and shipping requirements",
+    image:
+      "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=2000&q=85",
   },
 ];
-
 
 export default function Home() {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -96,6 +108,16 @@ export default function Home() {
   >
     WHATSAPP ↗
   </a>
+
+<a
+  href="https://www.instagram.com/brshipping_250/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="nav-contact instagram-contact"
+>
+  INSTAGRAM ↗
+</a>
+  
 <a
   href={`https://mail.google.com/mail/?view=cm&fs=1&to=${CONTACT_EMAIL}&su=${encodeURIComponent("Shipping enquiry - BR Shipping")}`}
   className="hero-button email-button"
@@ -152,6 +174,16 @@ export default function Home() {
     WHATSAPP US →
   </a>
 
+
+<a
+  href="https://www.instagram.com/brshipping_250/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="nav-contact instagram-contact"
+>
+  INSTAGRAM ↗
+</a>
+
  <a
   href={`https://mail.google.com/mail/?view=cm&fs=1&to=${CONTACT_EMAIL}&su=${encodeURIComponent("Shipping enquiry - BR Shipping")}`}
   className="hero-button email-button"
@@ -160,6 +192,8 @@ export default function Home() {
 >
   SEND AN EMAIL →
 </a>
+
+
 </div>
 
         </div>

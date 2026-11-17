@@ -372,43 +372,7 @@ a {
   }
 }
 
-/* FLOATING WHATSAPP BUTTON */
 
-.whatsapp-button {
-  position: fixed;
-  right: 30px;
-  bottom: 30px;
-  z-index: 100;
-  width: 58px;
-  height: 58px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: #25d366;
-  color: white;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, background 0.3s ease;
-}
-
-.whatsapp-button:hover {
-  transform: translateY(-5px) scale(1.05);
-  background: #20ba5a;
-}
-
-.whatsapp-button svg {
-  width: 32px;
-  height: 32px;
-}
-
-@media (max-width: 600px) {
-  .whatsapp-button {
-    width: 52px;
-    height: 52px;
-    right: 18px;
-    bottom: 20px;
-  }
-}
 
 
 /* SLIDE SHIPPING PRICES */
@@ -498,4 +462,13 @@ a {
   .hero-actions {
     flex-wrap: wrap;
   }
+}
+
+.instagram-contact {
+  border-color: #d86aa8;
+}
+
+.instagram-contact:hover {
+  background: #d86aa8;
+  color: white;
 }
